@@ -104,7 +104,7 @@ Input Data → Batch Analysis → Pattern Identification →
 LLM Proposals → Guardrails → Assessment → Report
 ```
 
-See `APPROACH_AND_LEARNING.md` for detailed architecture and design decisions.
+See `APPROACH_AND_LEARNING.pdf` for detailed architecture and design decisions.
 
 ## Assessment Metrics
 
