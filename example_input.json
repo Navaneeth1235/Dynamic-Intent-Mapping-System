@@ -1,0 +1,90 @@
+{
+  "intent_mapper": {
+    "about_product": {
+      "level": "primary",
+      "name": "About Product",
+      "description": "Customer is asking about product information, features, benefits, or specifications"
+    },
+    "about_product_product_info": {
+      "level": "secondary",
+      "name": "Product Info",
+      "description": "General product information including benefits, ingredients, specialty, and features",
+      "parent": "about_product"
+    },
+    "recommendation": {
+      "level": "primary",
+      "name": "Recommendation",
+      "description": "Customer is asking for product recommendations based on their needs"
+    },
+    "order_management": {
+      "level": "primary",
+      "name": "Order Management",
+      "description": "Customer inquiries about orders including status, tracking, cancellation, or refunds"
+    },
+    "order_management_order_status": {
+      "level": "secondary",
+      "name": "Order Status",
+      "description": "Customer wants to know the current status or tracking information of their order",
+      "parent": "order_management"
+    }
+  },
+  "messages": [
+    {
+      "message": "How do I use this product? What's the recommended dosage?",
+      "intent": {
+        "primary": "about_product",
+        "secondary": "about_product_product_info"
+      }
+    },
+    {
+      "message": "How should I apply this cream? How many times a day?",
+      "intent": {
+        "primary": "about_product",
+        "secondary": "about_product_product_info"
+      }
+    },
+    {
+      "message": "What's the usage instructions for this supplement?",
+      "intent": {
+        "primary": "about_product",
+        "secondary": "about_product_product_info"
+      }
+    },
+    {
+      "message": "Can you tell me about the ingredients in this product?",
+      "intent": {
+        "primary": "about_product",
+        "secondary": "about_product_product_info"
+      }
+    },
+    {
+      "message": "What are the benefits of this product?",
+      "intent": {
+        "primary": "about_product",
+        "secondary": "about_product_product_info"
+      }
+    },
+    {
+      "message": "How often should I take this?",
+      "intent": {
+        "primary": "about_product",
+        "secondary": "about_product_product_info"
+      }
+    },
+    {
+      "message": "What's the status of my order?",
+      "intent": {
+        "primary": "order_management",
+        "secondary": "order_management_order_status"
+      }
+    },
+    {
+      "message": "When will my order arrive?",
+      "intent": {
+        "primary": "order_management",
+        "secondary": "order_management_order_status"
+      }
+    }
+  ],
+  "classification_prompt": "Classify customer messages into primary and secondary intents."
+}
