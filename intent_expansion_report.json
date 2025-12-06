@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-12-06T14:18:30.797806",
+  "timestamp": "2025-12-06T14:29:14.601092",
   "summary": {
     "total_messages_analyzed": 200,
     "total_intents_existing": 40,
@@ -8,12 +8,12 @@
   },
   "proposals": [
     {
-      "level": "secondary",
+      "level": "primary",
       "name": "Track Order",
       "id": "logistics_track_order",
-      "description": "When the customer is asking for assistance or information on how to track their order.",
+      "description": "When the customer asks how to track their order.",
       "parent_id": null,
-      "rationale": "This intent is distinct as it specifically addresses a common customer inquiry about tracking orders, which is not explicitly covered by existing intents. It captures a specific action that customers frequently need assistance with, separate from general order status inquiries.",
+      "rationale": "This intent is distinct because it specifically addresses customer inquiries about tracking their orders, which is a common and specific request not currently covered by existing intents. It allows for better categorization and response to a frequent customer need.",
       "quantitative_evidence": {
         "message_count": 16,
         "source": "low_confidence_analysis"
@@ -29,12 +29,12 @@
       ]
     },
     {
-      "level": "secondary",
+      "level": "primary",
       "name": "Product Usage and Special Features",
       "id": "specific_product_usage_special_features",
-      "description": "When the customer asks about how to use a specific product in their daily routine or inquires about the special features of that product.",
+      "description": "When the customer asks how to use a specific product in their daily routine or inquires about its special features.",
       "parent_id": null,
-      "rationale": "This intent captures a distinct pattern where customers are not only interested in the product itself but also in practical usage and unique benefits, which is not fully covered by existing intents. It combines elements of usage instructions and product specialty inquiries, providing a more focused response to customers seeking detailed guidance on specific products.",
+      "rationale": "The messages indicate a distinct pattern where customers are specifically interested in understanding how to incorporate a product into their routine and what makes it unique. This is not fully covered by existing intents, which focus on general product information or effectiveness. This intent addresses a combination of usage and special attributes, which is a common customer inquiry.",
       "quantitative_evidence": {
         "message_count": 8,
         "source": "low_confidence_analysis"
@@ -78,15 +78,15 @@
         "proposal_id": "logistics_track_order",
         "proposal_name": "Track Order",
         "pattern_distinctness": 0.0,
-        "distinctness_from_existing": 0.8395940019190136,
-        "overall_distinctness": 0.4197970009595068
+        "distinctness_from_existing": 0.8100741871714151,
+        "overall_distinctness": 0.40503709358570755
       },
       {
         "proposal_id": "specific_product_usage_special_features",
         "proposal_name": "Product Usage and Special Features",
         "pattern_distinctness": 0.0,
-        "distinctness_from_existing": 0.8127979145897195,
-        "overall_distinctness": 0.40639895729485975
+        "distinctness_from_existing": 0.8235232551718731,
+        "overall_distinctness": 0.41176162758593654
       }
     ],
     "confidence_metrics": {

@@ -643,6 +643,10 @@ class IntentExpansionPipeline:
                     )
                     
                     if proposal and proposal.confidence_score >= self.analyzer.min_confidence:
+                        # Fix level for primary intents (no parent)
+                        # Since parent_intent=None, these should be primary intents
+                        proposal.level = 'primary'
+                        proposal.parent_id = None
                         proposal.quantitative_evidence = {
                             'message_count': len(group_messages),
                             'source': 'low_confidence_analysis'
